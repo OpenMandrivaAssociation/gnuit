@@ -1,7 +1,7 @@
 Summary:	A set of GNU Interactive Tools
 Name: 		gnuit
 Version:	4.9.5
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv3
 Group:		File tools
 URL:		http://www.gnu.org/software/gnuit/
