@@ -1,0 +1,67 @@
+From abae81bb1870bf5c609f8e618f25c70faadac251 Mon Sep 17 00:00:00 2001
+From: Paulo Ricardo Zanoni <pzanoni@mandriva.com>
+Date: Thu, 1 Apr 2010 14:02:44 -0300
+Subject: [PATCH 2/2] Fix linking
+
+---
+ term/Makefile.in |   14 +++++++-------
+ 1 files changed, 7 insertions(+), 7 deletions(-)
+
+diff --git a/term/Makefile.in b/term/Makefile.in
+index 73c1ed0..63ee1ec 100644
+--- a/term/Makefile.in
++++ b/term/Makefile.in
+@@ -773,43 +773,43 @@ install-data-hook:
+ 	for i in $(GIT_XTERMS);\
+ 	do\
+ 	    rm -f $(DESTDIR)$(datadir)/gnuit/$$i;\
+-	    ln -s $(datadir)/gnuit/gnuitrc.xterm $(DESTDIR)$(datadir)/gnuit/$$i;\
++	    ln -s gnuitrc.xterm $(DESTDIR)$(datadir)/gnuit/$$i;\
+ 	done
+ 	\
+ 	for i in $(GIT_COLOR_XTERMS);\
+ 	do\
+ 	    rm -f $(DESTDIR)$(datadir)/gnuit/$$i;\
+-	    ln -s $(datadir)/gnuit/gnuitrc.xterm-color $(DESTDIR)$(datadir)/gnuit/$$i;\
++	    ln -s gnuitrc.xterm-color $(DESTDIR)$(datadir)/gnuit/$$i;\
+ 	done
+ 	\
+ 	for i in $(GIT_HPTERMS);\
+ 	do\
+ 	    rm -f $(DESTDIR)$(datadir)/gnuit/$$i;\
+-	    ln -s $(datadir)/gnuit/gnuitrc.hpterm $(DESTDIR)$(datadir)/gnuit/$$i;\
++	    ln -s gnuitrc.hpterm $(DESTDIR)$(datadir)/gnuit/$$i;\
+ 	done
+ 	\
+ 	for i in $(GIT_GENERICS);\
+ 	do\
+ 	    rm -f $(DESTDIR)$(datadir)/gnuit/$$i;\
+-	    ln -s $(datadir)/gnuit/gnuitrc.generic $(DESTDIR)$(datadir)/gnuit/$$i;\
++	    ln -s gnuitrc.generic $(DESTDIR)$(datadir)/gnuit/$$i;\
+ 	done
+ 	\
+ 	for i in $(GIT_VT100S);\
+ 	do\
+ 	    rm -f $(DESTDIR)$(datadir)/gnuit/$$i;\
+-	    ln -s $(datadir)/gnuit/gnuitrc.vt100 $(DESTDIR)$(datadir)/gnuit/$$i;\
++	    ln -s gnuitrc.vt100 $(DESTDIR)$(datadir)/gnuit/$$i;\
+ 	done
+ 	\
+ 	for i in $(GIT_ANSIS);\
+ 	do\
+ 	    rm -f $(DESTDIR)$(datadir)/gnuit/$$i;\
+-	    ln -s $(datadir)/gnuit/gnuitrc.ansi $(DESTDIR)$(datadir)/gnuit/$$i;\
++	    ln -s gnuitrc.ansi $(DESTDIR)$(datadir)/gnuit/$$i;\
+ 	done
+ 	\
+ 	for i in $(GIT_LINUXS);\
+ 	do\
+ 	    rm -f $(DESTDIR)$(datadir)/gnuit/$$i;\
+-	    ln -s $(datadir)/gnuit/gnuitrc.linux $(DESTDIR)$(datadir)/gnuit/$$i;\
++	    ln -s gnuitrc.linux $(DESTDIR)$(datadir)/gnuit/$$i;\
+ 	done
+ 
+ uninstall-local:
+-- 
+1.6.4.4
+
