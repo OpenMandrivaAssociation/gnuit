@@ -72,3 +72,57 @@ rm -rf %{buildroot}
 %preun
 %{_remove_install_info gnuit.info}
 
+
+
+%changelog
+* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 4.9.5-2mdv2011.0
++ Revision: 610953
+- rebuild
+
+* Thu Apr 01 2010 Paulo Ricardo Zanoni <pzanoni@mandriva.com> 4.9.5-1mdv2010.1
++ Revision: 530734
+- Upstream renamed project to gnuit
+- Upstream renamed the package to "gnuit"
+- New version: 4.9.5
+- Spec and patches adapted to new name
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Thu Aug 07 2008 Thierry Vignaud <tv@mandriva.org> 4.3.20-20mdv2009.0
++ Revision: 266925
+- rebuild early 2009.0 package (before pixel changes)
+
+* Wed Jun 11 2008 Anssi Hannula <anssi@mandriva.org> 4.3.20-19mdv2009.0
++ Revision: 218151
+- remove now unneeded conflicts with linus-git (Paulo prefixed the
+  programs)
+- simplify obsoletes versioning
+
+* Wed Jun 11 2008 Paulo Andrade <pcpa@mandriva.com.br> 4.3.20-18mdv2009.0
++ Revision: 218119
+- Rename git directory to gnu-git, to match new package name.
+- Fix some typos in documentation patch.
+  Add a conflicts with older versions of linus-git package.
+- Rename spec file.
+- Modify the git package so that it can be renamed to gnu-git, and not
+  conflict with linus-git package, that should be renamed to just git.
+  This should address #34692 (Installing git isn't easy...)
+
+  + Andreas Hasenack <andreas@mandriva.com>
+    - rebuild for 2008.1
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - rebuild
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Thu Sep 20 2007 Adam Williamson <awilliamson@mandriva.org> 4.3.20-14mdv2008.0
++ Revision: 91265
+- rebuild for 2008
+
