@@ -66,8 +66,6 @@ rm -rf %{buildroot}
 %clean
 rm -rf %{buildroot}
 
-%post
-%{_install_info gnuit.info}
 
 %preun
 %{_remove_install_info gnuit.info}
