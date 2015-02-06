@@ -1,7 +1,7 @@
 Summary:	A set of GNU Interactive Tools
 Name: 		gnuit
 Version:	4.9.5
-Release:	4
+Release:	5
 License:	GPLv3+
 Group:		File tools
 Url:		http://www.gnu.org/software/gnuit/
