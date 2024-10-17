@@ -4,7 +4,7 @@ Version:	4.9.5
 Release:	5
 License:	GPLv3+
 Group:		File tools
-Url:		http://www.gnu.org/software/gnuit/
+Url:		https://www.gnu.org/software/gnuit/
 Source0:	http://ftp.gnu.org/gnu/gnuit/%{name}-%{version}.tar.gz
 Patch1:		0001-Fix-string-format-errors.patch
 Patch2:		0002-Fix-linking.patch
